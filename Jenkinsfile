@@ -1,8 +1,20 @@
 pipeline {
     agent any
-    stage ("PRE BUILD") {
-        steps {
-            echo 'worked.........'
+    stages {
+        stage ("PRE BUILD") {
+            steps {
+                echo 'pre build........'
+            }
+        }
+        stage ("TESTING") {
+            steps {
+                echo 'testing.........'
+            }
+        }
+        stage ("DEPLOYMENTS") {
+            steps {
+                echo 'deployments.........'
+            }
         }
     }
 }
