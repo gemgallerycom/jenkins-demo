@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    stage("PRE BUILD") {
+    stage ("PRE BUILD") {
         steps {
             echo 'worked.........'
         }
